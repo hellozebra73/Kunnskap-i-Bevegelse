@@ -1,0 +1,94 @@
+\documentclass[12pt,twoside,onecolumn]{article}
+
+\usepackage{a4}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{pdfpages}
+\usepackage{apacite}
+\usepackage{jneurosci}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[norsk]{babel}
+\usepackage{subfiles} % Handeling multiple chapters on seperate files.
+\usepackage{graphicx}  % for displaying figures
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{amsmath} % math package
+\usepackage{relsize} % to use larger math symbols
+\usepackage{amssymb} % for using blackboard letters (e.g R for real numbers)
+\usepackage{tocbibind} % for adding the reference section in table of contents
+\usepackage{fixltx2e} % for text in sub script
+\usepackage{perpage} % for resetting footnote counter at each page
+\usepackage{csquotes}
+\usepackage{epigraph}
+\usepackage{ragged2e}
+
+\MakePerPage{footnote} %the perpage package command
+
+\addto\captionsenglish{%
+  \renewcommand{\figurename}{Figur}
+}
+
+\makeatletter
+\def\@documentnocite#1{\@bsphack
+  \@for\@citeb:=#1\do{%
+    \edef\@citeb{\expandafter\@firstofone\@citeb}%
+    \if@filesw\immediate\write\@auxout{\string\citation{\@citeb}}\fi
+    \@ifundefined{b@\@citeb}{\G@refundefinedtrue
+      \@latex@warning{Citation `\@citeb' undefined}}{}}%
+  \@esphack}
+\AtBeginDocument{\let\nocite\@documentnocite}
+\makeatother
+
+\begin{document}
+\pagenumbering{roman} 
+% Front page with uio logo - remember to fix the logo
+
+\newpage\null\newpage
+\pagenumbering{arabic} 
+
+
+\section*{Ligninger}
+
+\subsection*{Førstegradsligninger}
+
+\textbf{Oppgave 1}
+\begin{align}
+7x - 3 &= 11  \qquad\text{ Plus 3 på begge sider av likhetstegnet.}\\
+7x -3 +3 &= 11 + 3\\
+7x &= 14\\  
+\frac{7x}{7} &=  \frac{14}{7} \qquad\text{ Uttrykket kan forkenkles mer.}\\
+x &= 2
+\end{align}
+\newline
+\textbf{Oppgave 2}
+\begin{align}
+\frac{x}{2} + \frac{5}{6} &=  \frac{4}{3} - x \qquad\text{ Pluss x på begge sider av likhetstegnet.}\\
+\frac{x}{2} + x + \frac{5}{6} &=  \frac{4}{3} - x + x\\
+\frac{x}{2} + x + \frac{5}{6} - \frac{5}{6} &=  \frac{4}{3} - \frac{5}{6}\\
+\frac{x}{2} + \frac{2x}{2} &= \frac{8}{6} - \frac{5}{6}\\
+\frac{3x}{2}  &= \frac{3}{6} \qquad\text{ Uttrykket kan forkenkles mer.}\\ 
+\frac{3x\cdot2}{7\cdot3} &=  \frac{1\cdot2}{2\cdot3} \qquad\text{ Uttrykket kan forkenkles mer.}\\
+x &= \frac{1}{2}
+\end{align}
+
+\subsection*{Sett inn tall i formler}
+\textbf{Oppgave 3}
+Fatima har kjøpt nytt abonnement hos Telihor. I abonnementet har hun en fast beløp hver måned på 50 kr. I tillegg må hun betale 1.50 kr per MB hun bruker. 
+\newline
+\textbf{Del 1} Lag en funksjon som beskriver Fatima's total månedlig kostnad. La x værer antall MB hun bruker i måneden og P(x) hennes total kostnad per måned.
+\begin{align}
+P(0) &= 50 \text{ Hvis Fatime bruker ingen data, blir da hennes forbruk lik 50}\\ 
+P(1) &= 50 + 1.5\cdot1\text{ Hvis Fatime bruker 1MB data, blir da hennes forbruk lik $50 + 1.5\cdot1$}\\ 
+P(2) &= 50 + 1.5\cdot2\text{ Hvis Fatime bruker 2MB data, blir da hennes forbruk lik $50 + 1.5\cdot2$}\\ 
+&\text{ Hva blir hennes forbruk hvis hun bruker x-antall data per måned} \nonumber\\
+P(x) &= 50 + 1.5x
+\end{align}
+\newline
+\textbf{Del 2}
+Finn hennes total kostnad per måned når hun bruker 1000 MB = 1 GB data.
+\begin{align}
+P(1000) &= 50 + 1.5\cdot1000\\
+P(1000) &= 50 + 1500\\
+P(1000) &= 1550
+\end{align}
+\end{document}
