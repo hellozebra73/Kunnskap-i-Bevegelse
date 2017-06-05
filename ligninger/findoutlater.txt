@@ -1,0 +1,5 @@
+Finn ut Senere:
+
+-Hvordan å skappe enviroments for å lagge "hint", 'tilleg forklaring' og andre konvensjoner.
+-Hvordan legge til akser i matplotlib (lag ferdig en funksjonsprogram med grid og muligheter til flere funksjoner)
+-Gi Fabian admin til repoen
