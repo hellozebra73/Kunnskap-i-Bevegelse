@@ -1,6 +1,0 @@
-Finn ut Senere:
-
--Hvordan å skappe enviroments for å lagge "hint", 'tilleg forklaring' og andre konvensjoner.
--Hvordan velge bestemte intervaler med bruker definert skritt lengde i matplotlib
-- Oppdatere alle grafene med grid
-

@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
 import sys
 from numpy import sin, cos, tan, arctan, arccos, arcsin, sqrt, exp
 from numpy import log as ln
@@ -7,7 +8,7 @@ from numpy import log10 as log
 
 
 
-def display_axis(x,y):
+def display_axis(x,y,tick_spacing=1):
     ax = fig.add_subplot(1,1,1)
     ax.plot(x, y)
     ax.spines['left'].set_position('zero')
@@ -17,7 +18,9 @@ def display_axis(x,y):
     ax.spines['left'].set_smart_bounds(True)
     ax.spines['bottom'].set_smart_bounds(True)
     ax.xaxis.set_ticks_position('bottom')
+    ax.xaxis.set_major_locator(ticker.MultipleLocator(tick_spacing))
     ax.yaxis.set_ticks_position('left')
+    ax.yaxis.set_major_locator(ticker.MultipleLocator(tick_spacing))
 
 
 fig = plt.figure()
@@ -52,6 +55,7 @@ if len(sys.argv)==5:
     plt.hold('on')
     plt.plot(x,y2)
     plt.plot(x,y3)
+
 plt.grid(True)
 plt.show()
 
