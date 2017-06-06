@@ -1,6 +1,7 @@
 \documentclass[12pt,twoside,onecolumn]{article}
 
 \usepackage{a4}
+\usepackage[dvipsnames]{xcolor}
 \usepackage[margin=0.75in]{geometry}
 \usepackage{pdfpages}
 \usepackage{apacite}
@@ -16,12 +17,11 @@
 \usepackage{relsize} % to use larger math symbols
 \usepackage{amssymb} % for using blackboard letters (e.g R for real numbers)
 \usepackage{tocbibind} % for adding the reference section in table of contents
-\usepackage{fixltx2e} % for text in sub script
+%\usepackage{fixltx2e} % for text in sub script
 \usepackage{perpage} % for resetting footnote counter at each page
 \usepackage{csquotes}
 \usepackage{epigraph}
 \usepackage{ragged2e}
-\usepackage{color}
 
 \MakePerPage{footnote} %the perpage package command
 
@@ -42,9 +42,10 @@
 
 \begin{document}
 
-{\color{blue} Skriften brukes til å refere til interaksjonsdesigner} \newline
-{\color{red} Skriften brukes til å refere til videodesigner}
-
+Denne skriften er det brukeren ser\newline
+{\color{gray} Skriften brukes til å refere til manus} \newline
+{\color{PineGreen} Skriften brukes til å refere til videodesigner} \newline
+{\color{Maroon} Skriften brukes til å refere til handlinger i plattformen}
 \section*{Ligninger}
 
 \subsection*{Førstegradsligninger}
@@ -99,23 +100,22 @@ Vennligst klikk følgende koordinat i planet:$(0,1)$
 \label{fig:grid}
 \end{figure}
 \newline
-\emph{Hvis bruker taster feil, får han lov til en ny sjanse}
+{\color{Maroon}Hvis bruker taster feil, får han lov til en ny sjanse}
 \newline
 Vennligst klikk følgende koordinat i planet: $(3,1)$
 \newline
-\emph{Hvis bruker taster feil denne gangen vil han få en hint - hint knappen blir synlig}
+{\color{Maroon}Hvis bruker taster feil denne gangen vil han få en hint - hint knappen blir synlig}
 \newline\newline
 \textbf{Hint:}  $(x,y) = (3,1)$, dvs. at $x = 3$ og $y = 1$. Prøv å vis dette punktet i planet.
 \newline
 \newline
-\emph{Hvis bruker taster feil på flere slike oppgaver vil han få en video med forklaring :} 
+{\color{Maroon}Hvis bruker taster feil på flere slike oppgaver vil han få en video med forklaring :} 
 \newline
 La oss se på punkt (4,2) og (-3,5). Vi vil nå vise at disse punktene ligger henholdsvis i første og andre kvadrant.
-Husk at den horisontale koordinat aksen (x-aksen) er alltid den første koordinat (\emph{På videoen blir et punktene hevet 
-med grafikk}, mens det andre tallet i tall paret er langs den vertikale koordinat aksen (y-aksen).
+Husk at den horisontale koordinat aksen (x-aksen) er alltid den første koordinat ({\color{PineGreen}På videoen blir et punktene hevet med grafikk}), mens det andre tallet i tall paret er langs den vertikale koordinat aksen (y-aksen).
 \newline
 \newline
-\emph{Hvis bruker taster riktig på flere slike oppgaver vil han gå videre til neste oppgave.}
+{\color{Maroon}Hvis bruker taster riktig på flere slike oppgaver vil han gå videre til neste oppgave.}
 \newline\newline
 \textbf{Oppgave 2} \newline
 Finn stignigstallet til følgende lineær funksjoner. Fyll svaret i svarfeltet :
@@ -124,12 +124,10 @@ Finn stignigstallet til følgende lineær funksjoner. Fyll svaret i svarfeltet :
 \includegraphics[scale = 0.3]{figures/Svarfelt.png}
 \label{fig:grid}
 \end{figure}
-\emph{Hvis eleven taster feil:} Husk at stigningstallet beskriver hvor mye funksjonen vokser eller minker når du øker x verdien. Husk at stigningstallet er gitt som forandring i y-verdien delt på forandringen i x-verdien:
+{\color{Maroon}Hvis eleven taster feil:} Husk at stigningstallet beskriver hvor mye funksjonen vokser eller minker når du øker x verdien. Husk at stigningstallet er gitt som forandring i y-verdien delt på forandringen i x-verdien:
 \begin{align}
 a = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
 \end{align}
-
-
 \begin{figure}[h!]
 \centering
     \begin{subfigure}{.5\textwidth}
@@ -149,5 +147,30 @@ a = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
     \includegraphics[scale = 0.5]{figures/05Xp2.png}
     \end{subfigure}
 \end{figure}
+{\color{Maroon}Hvis eleven forsatt ikke forstår vil da eleven presenteres med en video forklaring :  Video forklaring knappen dukker opp.}
+\newline
+\newline
+\textbf{Video forklaring:}
+\newline\newline
+{\emph{\color{gray}
+Husk at stigningstallet kan regnes ved å dele forandringen mellom y verdiene på forandringen i x-verdiene.}} 
+\newline
+{\color{PineGreen} På videoen vises formelen mens det forklares vha. grafen hvor oppleseren trekker en vertikal linje ned fra grafen fra en passelig funksonsverdi og deretter trekkes det en linje horisontalt inntil til funksjonen.} \newline\newline
+{\emph{\color{gray}
+Jeg kan velge passende $\Delta y$ og $\Delta x$ verdiene og sette disse inn i formelen for å regne ut stigningstallet.}} \newline
+{\color{PineGreen} Det vises at oppleseren markerer $\Delta y$ og $\Delta x$ på grafen og skriver opp formelen.} 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale = 0.4]{figures/stigningstallet.png}
+\end{figure}
+\newline\newline
+{\emph{\color{gray}
+F.eks i funksjonen $y = 3x$. Vi velger disse to punktene $y_2$ og $y_1$. Her ser vi at forandringen i y, er $\Delta y = y_2 - y_1 = 6- 0$ og forandringen i for disse funksjonsverdiene er $\Delta x_2 - \Delta x_1 = 2 - 0$. Da ser vi at stigningstallet blir $6/2 = 3.$}} \newline
+{\color{PineGreen} Det vises at oppleseren gjentar avlesning fra funksjonen og markerer verdiene med striplet linje. Deretter setter oppleseren verdiene inn i formelen og regner ut stigningstallet.}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale = 0.3]{figures/stigningstalleksempelet.png}
+\end{figure}
+
 
 \end{document}

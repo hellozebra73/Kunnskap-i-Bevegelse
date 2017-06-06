@@ -9,12 +9,12 @@ if len(sys.argv) > 1:
 cmd1 = "pdflatex "
 os.system(cmd1+filename)
 
-if (filename =="main") or (filename =="biblo"):
-	cmd2 = "bibtex "
-	os.system(cmd2+filename)
+#if (filename =="main") or (filename =="biblo"):
+#	cmd2 = "bibtex "
+#	os.system(cmd2+filename)
 
-os.system(cmd1+filename)
-os.system(cmd1+filename)
+#os.system(cmd1+filename)
+#os.system(cmd1+filename)
 
 cmd3 = "mv "
 destination = "../"
