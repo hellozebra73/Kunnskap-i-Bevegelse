@@ -21,6 +21,7 @@
 \usepackage{csquotes}
 \usepackage{epigraph}
 \usepackage{ragged2e}
+\usepackage{color}
 
 \MakePerPage{footnote} %the perpage package command
 
@@ -40,12 +41,9 @@
 \makeatother
 
 \begin{document}
-\pagenumbering{roman} 
-% Front page with uio logo - remember to fix the logo
 
-\newpage\null\newpage
-\pagenumbering{arabic} 
-
+{\color{blue} Skriften brukes til å refere til interaksjonsdesigner} \newline
+{\color{red} Skriften brukes til å refere til videodesigner}
 
 \section*{Ligninger}
 
@@ -120,21 +118,36 @@ med grafikk}, mens det andre tallet i tall paret er langs den vertikale koordina
 \emph{Hvis bruker taster riktig på flere slike oppgaver vil han gå videre til neste oppgave.}
 \newline\newline
 \textbf{Oppgave 2} \newline
-I denne oppgaven skal du finne stignigstallet til følgende lineær funksjoner. Fyll svaret i svarfeltet :
+Finn stignigstallet til følgende lineær funksjoner. Fyll svaret i svarfeltet :
 \begin{figure}[h!]
-\includegraphics[scale = 0.4]{figures/Svarfelt.png}
+\centering
+\includegraphics[scale = 0.3]{figures/Svarfelt.png}
 \label{fig:grid}
 \end{figure}
+\emph{Hvis eleven taster feil:} Husk at stigningstallet beskriver hvor mye funksjonen vokser eller minker når du øker x verdien. Husk at stigningstallet er gitt som forandring i y-verdien delt på forandringen i x-verdien:
+\begin{align}
+a = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
+\end{align}
+
+
 \begin{figure}[h!]
-\includegraphics[scale = 0.5]{figures/3X.png}
-\label{fig:grid}
+\centering
+    \begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[scale = 0.5]{figures/3X.png}
+    \end{subfigure}%%
+    \begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[scale = 0.5]{figures/3X.png}
+    \end{subfigure}
+    \begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[scale = 0.5]{figures/3Xp2.png}
+    \end{subfigure}%%
+    \begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[scale = 0.5]{figures/05Xp2.png}
+    \end{subfigure}
 \end{figure}
-\begin{figure}[h!]
-\includegraphics[scale = 0.5]{figures/3Xp2.png}
-\label{fig:grid}
-\end{figure}
-\begin{figure}[h!]
-\includegraphics[scale = 0.5]{figures/05Xp2.png}
-\label{fig:grid}
-\end{figure}
+
 \end{document}

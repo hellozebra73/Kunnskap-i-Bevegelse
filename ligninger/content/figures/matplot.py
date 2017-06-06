@@ -52,7 +52,7 @@ if len(sys.argv)==5:
     plt.hold('on')
     plt.plot(x,y2)
     plt.plot(x,y3)
-
+plt.grid(True)
 plt.show()
 
 """
