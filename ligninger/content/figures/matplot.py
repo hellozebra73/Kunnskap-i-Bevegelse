@@ -8,7 +8,7 @@ from numpy import log10 as log
 
 
 
-def display_axis(x,y,tick_spacing=1):
+def display_axis(x,y,tick_spacing_x = 0.2,tick_spacing_y=1):
     ax = fig.add_subplot(1,1,1)
     ax.plot(x, y)
     ax.spines['left'].set_position('zero')
@@ -18,9 +18,9 @@ def display_axis(x,y,tick_spacing=1):
     ax.spines['left'].set_smart_bounds(True)
     ax.spines['bottom'].set_smart_bounds(True)
     ax.xaxis.set_ticks_position('bottom')
-    ax.xaxis.set_major_locator(ticker.MultipleLocator(tick_spacing))
+    ax.xaxis.set_major_locator(ticker.MultipleLocator(tick_spacing_x))
     ax.yaxis.set_ticks_position('left')
-    ax.yaxis.set_major_locator(ticker.MultipleLocator(tick_spacing))
+    ax.yaxis.set_major_locator(ticker.MultipleLocator(tick_spacing_y))
 
 
 fig = plt.figure()
