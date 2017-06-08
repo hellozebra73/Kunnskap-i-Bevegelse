@@ -22,12 +22,15 @@
 \usepackage{csquotes}
 \usepackage{epigraph}
 \usepackage{ragged2e}
+\usepackage{exercise}
 
 \MakePerPage{footnote} %the perpage package command
 
 \addto\captionsenglish{%
   \renewcommand{\figurename}{Figur}
 }
+
+\addto\captionsenglish{\renewcommand{\exercisename}{Oppgave}}
 
 \makeatletter
 \def\@documentnocite#1{\@bsphack
@@ -47,11 +50,12 @@ Denne skriften er det brukeren ser\newline
 {\color{PineGreen} Skriften brukes til å refere til videodesigner} \newline
 {\color{Maroon} Skriften brukes til å refere til handlinger i plattformen} \newline
 {\color{Cerulean} Skriften brukes til å stille design spørsmål}
+
 \section*{Ligninger}
 
 \subsection*{Førstegradsligninger}
 
-\textbf{Oppgave 1}
+\begin{Exercise}
 \begin{align}
 7x - 3 &= 11  \qquad\text{ Plus 3 på begge sider av likhetstegnet.}\\
 7x -3 +3 &= 11 + 3\\
@@ -59,8 +63,10 @@ Denne skriften er det brukeren ser\newline
 \frac{7x}{7} &=  \frac{14}{7} \qquad\text{ Uttrykket kan forkenkles mer.}\\
 x &= 2
 \end{align}
-\newline
-\textbf{Oppgave 2}
+\end{Exercise}
+
+\begin{Exercise}
+\textbf{Del 1}
 \begin{align}
 \frac{x}{2} + \frac{5}{6} &=  \frac{4}{3} - x \qquad\text{ Pluss x på begge sider av likhetstegnet.}\\
 \frac{x}{2} + x + \frac{5}{6} &=  \frac{4}{3} - x + x\\
@@ -70,9 +76,10 @@ x &= 2
 \frac{3x\cdot2}{7\cdot3} &=  \frac{1\cdot2}{2\cdot3} \qquad\text{ Uttrykket kan forkenkles mer.}\\
 x &= \frac{1}{2}
 \end{align}
+\end{Exercise}
 
 \subsection*{Sett inn tall i formler}
-\textbf{Oppgave 3}
+\begin{Exercise}
 Fatima har kjøpt nytt abonnement hos Telihor. I abonnementet har hun en fast beløp hver måned på 50 kr. I tillegg må hun betale 1.50 kr per MB hun bruker. 
 \newline\newline
 \textbf{Del 1)} Lag en ligning som beskriver Fatimas total månedlig kostnad. La x være antall MB hun bruker i måneden og P(x) hennes total kostnad per måned.
@@ -92,10 +99,11 @@ P &= 50 + 1500\\
 P &= 1550
 \end{align}
 Vil du si at dette er et bra abonnement for Fatima i år 2017 ?
+\end{Exercise}
 
 \section*{Funksjoner}
 
-\textbf{Oppgave 1}
+\begin{Exercise}
 Vennligst klikk følgende koordinat i planet:$(0,1)$
 \begin{figure}[h!]
 \includegraphics[scale = 0.3]{figures/Grid.png}
@@ -118,11 +126,13 @@ Husk at den horisontale koordinat aksen (x-aksen) er alltid den første koordina
 \newline
 \newline
 {\color{Maroon}Hvis bruker taster riktig på flere slike oppgaver vil han gå videre til neste oppgave.}
+\end{Exercise}
+
 
 \subsection*{Stigningstallet}
 
-\textbf{Oppgave 2} \newline
-Finn stignigstallet til følgende lineær funksjoner. Fyll svaret i svarfeltet :
+\begin{Exercise}
+Finn stignigstallet til følgende lineære funksjoner. Fyll svaret i svarfeltet :
 \begin{figure}[h!]
 \centering
 \includegraphics[scale = 0.3]{figures/Svarfelt.png}
@@ -175,21 +185,22 @@ F.eks i funksjonen $y = 3x$. Vi velger disse to punktene $y_2$ og $y_1$. Her ser
 \centering
 \includegraphics[scale = 0.3]{figures/stigningstalleksempelet.png}
 \end{figure}
+\end{Exercise}
 
+\newpage
 \subsection*{Konstantledd}
 
-\textbf{Oppgave 3} \newline
+\begin{Exercise}
 Finn verdien til y hvor funksjonen krysser y-aksen. (Tast verdien i svarfeltet) {\color{Cerulean} Hvordan bør svarfeltet brukes. Her skal svaret være en tall og da føler vi at det vanlige svarfeltet (se figuren under) blir for pregende.}
-
 \begin{figure}[h!]
 \centering
-\includegraphics[scale = 0.3]{figures/Svarfelt.png}
-\label{fig:grid}
+\includegraphics[scale = 0.3]{figures/Platform_explained.png}
 \end{figure}
+\end{Exercise}
 
+\begin{Exercise}
 \hspace{-6mm}\textbf{Oppgave 4} \newline
 Finn konstantleddet til følgende lineære funksjoner. Fyll svaret i svarfeltet :
-
 \begin{figure}[h!]
 \centering
     \begin{subfigure}{.5\textwidth}
@@ -202,13 +213,14 @@ Finn konstantleddet til følgende lineære funksjoner. Fyll svaret i svarfeltet 
     \end{subfigure}
     \begin{subfigure}{.5\textwidth}
     \centering
-    \includegraphics[scale = 0.5]{figures/3Xp2.png}
+    \includegraphics[scale = 0.5]{figures/Xm25.png}
     \end{subfigure}%%
     \begin{subfigure}{.5\textwidth}
     \centering
-    \includegraphics[scale = 0.5]{figures/05Xp2.png}
+    \includegraphics[scale = 0.5]{figures/05Xp5.png}
     \end{subfigure}
 \end{figure}
 {\color{Maroon}Hvis eleven taster feil: Husk at konstantleddet til funksjonen kan leses av figuren. Det er verdien til y der funksjonen krysser av grafen.}
 {\color{Maroon}Figur med utpekt verdi på funksjonen blir etterspurt.}
+\end{Exercise}
 \end{document}
