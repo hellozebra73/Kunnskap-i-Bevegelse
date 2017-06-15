@@ -8,7 +8,7 @@ from numpy import log10 as log
 
 
 
-def display_axis(x,y,tick_spacing_x = 1,tick_spacing_y=1):
+def display_axis(x,y,tick_spacing_x = 0.5,tick_spacing_y=5):
     ax = fig.add_subplot(1,1,1)
     ax.plot(x, y)
     ax.spines['left'].set_position('zero')
