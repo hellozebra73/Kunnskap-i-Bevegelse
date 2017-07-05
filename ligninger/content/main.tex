@@ -24,6 +24,7 @@
 \usepackage{ragged2e}
 \usepackage{exercise}
 \usepackage{amsmath}
+\usepackage{soul}
 
 
 \MakePerPage{footnote} %the perpage package command
@@ -399,20 +400,25 @@ Hvor krysser funksjonen y aksen?
 $b=$
 \end{Exercise}
 
+
+%%%%%%%%%%%%%%%%%%%% Oppgave 13    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{Exercise}
 Finn likning til linja som går gjenomm punktene $(2,6)$  og  $(0,-4 )$
 \newline\newline
-\textbf{Hint :}\newline 
+{\color{Maroon} Det skal vises en knap som sier løsningsforslag.  Dersom han trykker på løsningsforlag kommer det løsningsforlag  } \newline
+\newline\newline
+\st{\textbf{Hint }}
+
+\textbf{Løsningsforslag :}\newline
+{\color{Maroon}Først gir plattformen et litt oversikt om hva er det som skal skje: } \
 Likning til en linje er på denne formen:
 \begin{align}
 y=\mathbf{a}x+ \mathbf{b}
 \end{align}
-Det vil si at vi vil finne stigninstallet $\mathbf{a}$ og konstantleddet $\mathbf{b}$.
-\newline\newline
-{\color{Maroon}Hvis elev forsatt sitter fast gis det et løsningsforslag -  for denne oppgavene der løsningen gitt gjennom skritt for skritt veiledning. Det antas heretter at eleven har svak forståelse}
+Det vil si at vi vil finne stigninstallet $\mathbf{a}$ og konstantleddet $\mathbf{b}$. Dette skal vi gjøre i 4 skritter.
 
 \begin{enumerate}
-\item Først kan vi finne stigninstallet $\mathbf{a}$  ved å bruke formelen:
+\item Først \st{kan vi finne} finner vi stigninstallet $\mathbf{a}$  ved å bruke formelen:
 
 \begin{align}
 a =  \frac{y_2 - y_1}{x_2 - x_1}
@@ -433,10 +439,15 @@ $ og $
 \end{matrix}
 $ 
 
-{\color{Maroon} Det oppstår $a=\frac{\:\:\:\:*\:\:\:\:}{\:\:\:\:*\:\:\:\:}$ på svarefeltet.
-Hvis brukeren klarer ikke å fylle riktig tall selv, oppstår det en forklarings video}
-\newline
-\newline
+\textbf{Finn $\mathbf{a}$ ved å sette verdiene til punktene i svarfeltet.}
+
+
+
+{\color{Maroon} Det oppstår $a=\frac{\square-\square}{\square-\square}$ på svarefeltet.
+Hvis brukeren klarer ikke å fylle riktig tall selv oppstår det en knapp til  forklaringsvideo, men det er ikke nødvendig at alle elever ser på det. Videon skal bare vises  dersom de trykker på knappen.}
+
+
+
 {\color{gray} La oss finne stigningstallet ved å bruke formelen a er lik forandring på y delt på forandring på x } \newline
 {\color{PineGreen} The equation for the slope is written: $a =  \frac{y_2 - y_1}{x_2 - x_1}$ } \newline
 {\color{gray}  For å finne forandring på y,tar vi differansen i y koordinatene, som i dette tillfelle er 6 minus minus 4 } \newline
@@ -450,18 +461,38 @@ Hvis brukeren klarer ikke å fylle riktig tall selv, oppstår det en forklarings
 \begin{align}
 y = \underline{\phantom{0}}x + b
 \end{align}}
+
+{\color{Maroon}  Hvis brukeren klarer ikke å fylle riktig tall selv oppstår det igjen en knapp til  forklaringsvideo, men igjen det er ikke nødvendig at alle elever ser på det. Videon skal bare vises  dersom de trykker på knappen.}
+
+
 {\color{gray} Nå at vi har funnet stigningstallet kan vi sette den i formelen  $y = ax + b$ } \newline
 {\color{PineGreen} $y = ax + b$  } \newline
 {\color{gray}Vi erstatter "a" med tall verdien 5 } \newline
 {\color{PineGreen} the letter a is erased and replaced with the number 5 }
 \newline\newline
-\item Nå må vi finne konstantleddet b, for å gjøre det velger vi et punkt og ersatter koordinatene i ligningen og deretter løser vi ligningen for b. Sett opp ligningen og løs uttrykket for b.
+\item Nå må vi finne konstantleddet b. \st{, for} For å gjøre det velger vi et punkt og ersatter koordinatene i ligningen $y=5x+b$ og deretter løser vi ligningen for b. 
+
+\textbf{Velg et punkt og erstatt $\mathbf{x}$ og $\mathbf{y}$ i likningen $y=5x+b$ og løs uttrykket for b.}
+
+{\color{Maroon} Det skal oppstå en hintknapp og en videoforklaringsknapp. Dersom han trykker på hint knapp oppstår det i svartfeltet den følgende hint}
+\newline
+\textbf{Hint 1}
+\newline
+\textbf{Sett inn x og y verdiene fra et av punktene og løs for b }
+{\color{Maroon} Dette går i svarfeltet}
 \begin{align}
-(\:) = 5\cdot(\:) + b\\
-(\, -4 \, ) = 5\cdot (\, 0 \, ) + b \\
-b = -4
+\square = 5\cdot\square + b\\
 \end{align}
-{\color{Maroon} Hvis bruker klarer ikke å sette opp en ligning for b, får han veiledning til å sette opp ligningen. Bruker trykker på hjelpeknappen} \newline
+
+
+
+\textbf{Hint 2}
+{\color{Maroon} Dette går i svarfeltet}
+Vi har valgt punktet $(0,-4)$ og satt inn i likninger.
+\textbf{ Løs for b }
+\begin{align}
+(\, -4 \, ) = 5\cdot (\, 0 \, ) + b \\
+\end{align}
 {\color{gray}For å  finne konstantleddet b  velger vi et punkt og ersatter koordinatene i ligningen. For eksempel velger jeg (2,6). Så jeg skal erstatte 6 med y og 2 med x} \newline
 {\color{PineGreen} write down the two points  $(2,6)$  and  $(0,-4 )$ above the equation and draw a red circle around $(2,6)$ . Then draw an arrow coming from 6 to y and another from 2 to x (see figure \ref{fig:Opp11S4})}
 \begin{figure}[h!]
@@ -521,7 +552,7 @@ b = y_1 - a\cdot x_1
 \end{itemize}
 \end{Exercise}
 
-%%%%%%%%%%%%%%%%%%%%%%%%% Oppgave 12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%% Oppgave 14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{Exercise}
 \label{ex:12}
 Finn funksjonen som er parallel med $y = 5x - 4$.
